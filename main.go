@@ -62,12 +62,12 @@ func syllable(last rune, total int) []rune {
 	var s int
 
 	switch {
-		case total == 4:
-			s = dice(1, 2)
-		case total == 3:
-			s = dice(2, 3)
-		default:
-			s = dice(1, 3)
+	case total == 4:
+		s = dice(1, 2)
+	case total == 3:
+		s = dice(2, 3)
+	default:
+		s = dice(1, 3)
 	}
 
 	var res []rune // slice of runes
